@@ -3,7 +3,7 @@ s/(-f|--from)[[:space:]]+snake-case[[:space:]]+//; t snake_case
 T wrong_input_case
 
 :wrong_input_case
-s/.*/No correct input naming convention specified or syntax is wrong./; q 1
+s/.*/No correct input naming convention specified or syntax is wrong./w/dev/stderr; q 1
 
 :pascal_case
 s/(-t|--to)[[:space:]]+pascal-case[[:space:]]+//; t wrong_target_case
@@ -16,7 +16,7 @@ s/(-t|--to)[[:space:]]+snake-case[[:space:]]+//; t wrong_target_case
 T wrong_target_case
 
 :wrong_target_case
-s/.*/No correct target naming convention specified or syntax is wrong./; q 1
+s/.*/No correct target naming convention specified or syntax is wrong./w/dev/stderr; q 1
 
 
 :pascal_case_to_snake_case
