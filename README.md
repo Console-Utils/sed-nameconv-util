@@ -11,7 +11,7 @@ sed (GNU sed) 4.7 is required to run this tool.
 ## Usage
 
 ```bash
-echo '-f|--from <convension> -t|--to <convension> --text <text>' | sed -f nameconf.sed
+echo '-f|--from <convension> -t|--to <convension> -i|--input <text>' | sed -f nameconf.sed
 ```
 
 where `convension` is:
@@ -23,11 +23,11 @@ Note: all options and text to be tranformed must be passed as a single input str
 
 ## Errors
 
-No input naming convention specified or syntax is wrong.
-No target naming convention specified or syntax is wrong.
+- No input naming convention specified or syntax is wrong. (1 error code)
+- No target naming convention specified or syntax is wrong. (1 error code)
 
 ## Examples
 
 ```bash
-echo '--from pascal-case --to snake-case --text <text>' | sed -f nameconf.sed
+echo '--from pascal-case --to snake-case --input HelloWorld' | sed -f nameconf.sed
 ```
