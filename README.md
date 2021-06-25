@@ -23,8 +23,8 @@ Note: all options and text to be tranformed must be passed as a single input str
 
 ## Errors
 
-- No input naming convention specified or syntax is wrong. (1 error code)
-- No target naming convention specified or syntax is wrong. (1 error code)
+- No correct input naming convention specified or syntax is wrong. (1 error code)
+- No correct target naming convention specified or syntax is wrong. (1 error code)
 
 ## Examples
 
