@@ -11,7 +11,7 @@ sed (GNU sed) 4.7 is required to run this tool.
 ## Usage
 
 ```bash
-echo '-f|--from <convension> -t|--to <convension> -i|--input <text>' | sed -f nameconf.sed
+echo '-f|--from <convension> -t|--to <convension> -i|--input <text>' | sed -r -f nameconv.sed
 ```
 
 where `convension` is:
@@ -29,5 +29,5 @@ Note: all options and text to be tranformed must be passed as a single input str
 ## Examples
 
 ```bash
-echo '--from pascal-case --to snake-case --input HelloWorld' | sed -f nameconf.sed
+echo '--from pascal-case --to snake-case --input HelloWorld' | sed -r -f nameconv.sed
 ```
