@@ -25,6 +25,7 @@ Note: all options and text to be tranformed must be passed as a single input str
 
 - No correct input naming convention specified or syntax is wrong. (1 error code)
 - No correct target naming convention specified or syntax is wrong. (1 error code)
+- Something went wrong. Please check whether all options are separated via at least one space. (1 error code)
 
 ## Examples
 
