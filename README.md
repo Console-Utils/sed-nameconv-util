@@ -1,4 +1,4 @@
-# nameconv
+# Naming convention converter
 
 ## Description
 
